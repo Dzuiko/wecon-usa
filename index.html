@@ -18,7 +18,7 @@
     header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#0b0f14 60%,rgba(11,15,20,0));border-bottom:1px solid var(--border)}
     .nav{display:flex;align-items:center;gap:20px;justify-content:space-between}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
-    .brand .logo{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-weight:700}
+    .brand .logo{width:96px;height:auto;display:block}
     .brand h1{font-size:18px;margin:0}
     .navlinks{display:flex;gap:16px}
     .navlinks a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px}
@@ -73,7 +73,7 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#home" aria-label="WECON USA home">
-        <div class="logo">WU</div>
+        <img class="logo" src="img/wecon-logo.svg" alt="Wecon logo">
         <h1>WECON USA</h1>
       </a>
       <nav class="navlinks" aria-label="Primary">
