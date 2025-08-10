@@ -64,11 +64,15 @@ body {
   overflow: hidden;
   background: #fff;
   text-align: center;
+  max-width: 240px; /* ширина карточки */
+  margin: auto;
 }
 
 .card img {
-  max-width: 100%;
+  max-width: 200px; /* ширина картинки */
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .card h4 {
