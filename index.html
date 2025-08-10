@@ -10,12 +10,27 @@ layout: null
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/site.css">
   <style>
-    .hero {
+    header.topbar.container {
       background: url('img/bg-plc-hmi.jpg') center/cover no-repeat;
+      min-height: 260px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      position: relative;
     }
-    .hero h1, .hero p, .hero .badge {
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    header .brand, header .nav {
+      position: relative;
+      z-index: 2;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(11,15,20,0.55);
+      z-index: 1;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -33,7 +48,7 @@ layout: null
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="header-hero">
       <h1>PLC & HMI — In Stock in USA</h1>
       <p>Transparent prices. Ships from NYC in 1–2 business days. No import duty.</p>
       <div class="badges">
