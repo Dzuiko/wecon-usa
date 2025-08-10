@@ -1,124 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>WECON USA – PLC & HMI (In Stock, USA)</title>
-  <meta name="description" content="WECON USA LLC – PLCs, HMIs, and automation gear in stock in the USA. Transparent pricing. Request invoice or pickup in NYC." />
-  <style>
-    :root{
-      --bg:#0b0f14; --panel:#111822; --muted:#7a8899; --text:#e9eef5; --brand:#39bdf2; --brand2:#1dd1a1;
-      --card:#0f1620; --border:#1e2a3a; --accent:#2b394c; --danger:#ef4444;
-    }
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Segoe UI,Roboto,Helvetica,Arial}
-
-    /* Layout */
-    .container{max-width:1120px;margin:0 auto;padding:24px}
-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: linear-gradient(180deg,rgba(11,15,20,0.92) 60%,rgba(11,15,20,0.5)), url('img/bg-plc-hmi.jpg') center/cover no-repeat;
-  border-bottom: 1px solid var(--border);
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-}
-.container.nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: space-between;
-  min-height: 120px;
-}
-    .brand img.logo{width:96px;height:auto;display:block}
-    .navlinks{display:flex;gap:16px}
-    .navlinks a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px}
-    .navlinks a:hover{background:var(--panel);color:var(--text)}
-
-    /* Hero */
-    .hero{padding:42px 0 24px;display:grid;gap:18px}
-    .hero h2{font-size:32px;margin:0 0 6px}
-    .hero p{margin:0;color:var(--muted)}
-    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .badge{font-size:12px;border:1px solid var(--accent);padding:6px 10px;border-radius:999px;color:#cfe7ff;background:rgba(57,189,242,.08)}
-
-    /* Sections */
-    section{margin:28px 0}
-    .panel{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:20px}
-    .section-title{margin:0 0 14px;font-size:20px}
-
-    /* Products */
-    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    @media (max-width:960px){.products{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.products{grid-template-columns:1fr}}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-    .thumb{aspect-ratio:4/3;background:#0c1219 url('') center/cover no-repeat}
-    .card-body{padding:14px;display:grid;gap:10px}
-    .title{font-weight:600}
-    .specs{color:var(--muted);font-size:14px}
-    .price{font-weight:700;font-size:18px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap}
-    .tag{font-size:12px;color:#cfe7ff;border:1px solid var(--accent);padding:4px 8px;border-radius:999px}
-    .cta-row{display:flex;gap:10px;margin-top:auto;padding:14px;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0))}
-    .btn{flex:1;text-align:center;text-decoration:none;padding:10px 12px;border-radius:12px;border:1px solid var(--accent);color:var(--text)}
-    .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#06222d;font-weight:700}
-    .stock{font-size:12px;color:#a7f3d0}
-
-    /* Shipping */
-    .shipping-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:820px){.shipping-grid{grid-template-columns:1fr}}
-    .shipping-grid .panel{height:100%}
-
-    /* Contact */
-    form{display:grid;gap:10px}
-    input,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--accent);background:#0b1219;color:var(--text)}
-    textarea{min-height:110px}
-    .note{color:var(--muted);font-size:13px}
-
-    footer{border-top:1px solid var(--border);padding:18px 0;margin-top:24px;color:var(--muted)}
-    footer a{color:#9fdfff}
-    .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-
-    body {
-      background: var(--bg);
-      position: relative;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(11,15,20,0.75); /* затемнение */
-      z-index: 0;
-      pointer-events: none;
-    }
-    main, header, footer {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="{{ site.baseurl }}/img/favicon.ico">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="WECON USA home">
-        <img class="logo" src="img/wecon-logo.svg" alt="Wecon logo">
-      </a>
-      <nav class="navlinks" aria-label="Primary">
-        <a href="#products">Products</a>
-        <a href="#shipping">Shipping</a>
-        <a href="#contact">Contact</a>
-        <a href="https://www.ebay.com/usr/wecon-usa" target="_blank" rel="noopener">eBay</a>
-      </nav>
-    </div>
+  <header class="topbar container">
+    <a href="{{ site.baseurl }}/" class="brand">
+      <img src="{{ site.baseurl }}/img/wecon-logo.svg" alt="Wecon" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.ebay.com/usr/dzuiko" target="_blank" rel="noopener">eBay</a>
+    </nav>
   </header>
 
   <main class="container">
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <h2>PLC & HMI — In Stock in USA</h2>
-      <p>Transparent prices. Ships from NYC in 1–2 business days. No import duty. Ask for invoice or pick up locally.</p>
+    <section class="hero">
+      <h1>PLC & HMI — In Stock in USA</h1>
+      <p>Transparent prices. Ships from NYC in 1–2 business days. No import duty.</p>
       <div class="badges">
         <span class="badge">Official Wecon supplier</span>
         <span class="badge">Warehouse: Queens, NY</span>
@@ -126,20 +31,28 @@ header {
       </div>
     </section>
 
-    <!-- Products -->
-    <section id="products">
-      <div class="row" style="justify-content:space-between;align-items:end;margin-bottom:10px">
-        <h3 class="section-title">In-stock products</h3>
-        <span class="stock" id="stockMeta"></span>
+    <section id="featured">
+      <h2>Featured</h2>
+      <div class="grid">
+        {% assign featured = site.products | where: "featured", true %}
+        {% for product in featured %}
+          {% include product-card.html product=product %}
+        {% endfor %}
       </div>
-      <div class="products" id="productGrid" aria-live="polite"></div>
-      <p class="note">Prices are for item only. Shipping and sales tax (if applicable) calculated at checkout or on invoice.</p>
     </section>
 
-    <!-- Shipping -->
+    <section id="products">
+      <h2>All products</h2>
+      <div class="grid">
+        {% for product in site.products %}
+          {% include product-card.html product=product %}
+        {% endfor %}
+      </div>
+    </section>
+
     <section id="shipping">
-      <h3 class="section-title">Shipping & pickup</h3>
-      <div class="shipping-grid">
+      <h2>Shipping & pickup</h2>
+      <div class="columns">
         <div class="panel">
           <strong>UPS Ground (contiguous US)</strong>
           <ul>
@@ -156,118 +69,31 @@ header {
         </div>
         <div class="panel">
           <strong>Dispatch time</strong>
-          <p>Ships in 1–2 business days for in‑stock items. Tracking provided.</p>
-          <div class="note">Overnight / 2‑Day available on request.</div>
+          <p>Ships in 1–2 business days for in-stock items. Tracking provided.</p>
+          <div class="note">Overnight / 2-Day available on request.</div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
-      <h3 class="section-title">Request an invoice / Ask a question</h3>
-      <div class="panel">
-        <form id="contactForm" action="https://formspree.io/f/your_form_id" method="POST">
-          <div class="row" style="gap:10px">
-            <input name="name" placeholder="Your name" required />
-            <input name="email" type="email" placeholder="Email" required />
-          </div>
-          <input name="company" placeholder="Company (optional)" />
-          <textarea name="message" placeholder="Model(s) and quantity, shipping ZIP, questions" required></textarea>
-          <input type="hidden" name="source" value="wecon-usa.com" />
-          <button class="btn primary" type="submit">Send</button>
-          <div class="note">By sending, you’ll receive a reply with final quote incl. shipping and tax. Or email directly: <a href="mailto:sales@wecon-usa.com">sales@wecon-usa.com</a></div>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container" style="padding:0">
-        <div class="row" style="justify-content:space-between">
-          <div>
-            © <span id="year"></span> WECON USA LLC. Partner of <a href="https://www.we-con.com.cn/en/" target="_blank" rel="noopener">Wecon (China)</a>.
-          </div>
-          <div>
-            <a href="#home">Home</a> · <a href="#products">Products</a> · <a href="#shipping">Shipping</a> · <a href="#contact">Contact</a>
-          </div>
+      <h2>Request an invoice / Ask a question</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST" class="contact">
+        <div class="row">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Email" required>
         </div>
-      </div>
-    </footer>
+        <input name="company" placeholder="Company (optional)">
+        <textarea name="message" placeholder="Model(s) and quantity, shipping ZIP, questions" required></textarea>
+        <input type="hidden" name="source" value="wecon-usa.com">
+        <button class="btn primary" type="submit">Send</button>
+        <div class="note">Or email: <a href="mailto:sales@wecon-usa.com">sales@wecon-usa.com</a></div>
+      </form>
+    </section>
   </main>
 
-  <script>
-    // ==== SIMPLE DATA YOU CAN EDIT ====
-    const PRODUCTS = [
-      {
-        sku: "PI8102H",
-        name: "HMI PI8102H 10.1" ,
-        specs: ["1024×600", "Cortex‑A8 600MHz", "2GB Flash / 128MB RAM", "Ethernet"],
-        price: 220,
-        img: "img/pi8102h.jpg",
-        tags: ["HMI", "In stock", "USA"],
-        stock: 6
-      },
-      {
-        sku: "LX3V-1616MR",
-        name: "PLC LX3V‑1616MR",
-        specs: ["16 in / 16 out", "Relay outputs", "24VDC", "Modbus"],
-        price: 165,
-        img: "img/lx3v-1616mr.jpg",
-        tags: ["PLC", "In stock"],
-        stock: 10
-      },
-      {
-        sku: "PI8043K",
-        name: "HMI PI8043K 4.3" ,
-        specs: ["480×272", "Serial + USB", "Panel‑mount"],
-        price: 95,
-        img: "img/pi8043k.jpg",
-        tags: ["HMI", "Budget"],
-        stock: 14
-      }
-    ];
-
-    // ==== RENDER ====
-    const grid = document.getElementById('productGrid');
-    const stockMeta = document.getElementById('stockMeta');
-    const dollars = n => `$${n.toLocaleString('en-US', {minimumFractionDigits:0})}`;
-
-    function render(){
-      grid.innerHTML = PRODUCTS.map(p => `
-        <article class="card" aria-label="${p.name}">
-          <div class="thumb" style="background-image:url('${p.img}'),linear-gradient(180deg,#0c1219,#0c1219)"></div>
-          <div class="card-body">
-            <div class="title">${p.name} <span style="color:var(--muted);font-weight:400">(${p.sku})</span></div>
-            <div class="specs">${p.specs.join(" • ")}</div>
-            <div class="price">${dollars(p.price)} <span class="stock">· In stock: ${p.stock}</span></div>
-            <div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
-          </div>
-          <div class="cta-row">
-            <a class="btn" href="#contact" onclick="prefill('${p.sku}')">Request invoice</a>
-            <a class="btn" href="mailto:sales@wecon-usa.com?subject=Quote%20for%20${encodeURIComponent(p.sku)}&body=Hi,%20please%20quote%20${encodeURIComponent(p.sku)}%20Qty:%20__%20Ship%20to%20ZIP:%20__" >Email quote</a>
-          </div>
-        </article>
-      `).join('');
-
-      const total = PRODUCTS.reduce((a,b)=>a+(b.stock||0),0);
-      stockMeta.textContent = `Models: ${PRODUCTS.length} · Units in stock: ${total}`;
-    }
-
-    function prefill(sku){
-      const t = document.querySelector('textarea[name="message"]');
-      if(!t) return;
-      const base = `Model: ${sku}\nQty: __\nShip to ZIP: __\nNotes:`;
-      t.value = base;
-      t.scrollIntoView({behavior:'smooth',block:'center'});
-    }
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-    render();
-
-    // Simple success state for Formspree (optional enhancement)
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(){
-      // no JS submission override here; keep native POST to Formspree
-    });
-  </script>
+  <footer class="footer">
+    © {{ site.time | date: "%Y" }} WECON USA LLC · Partner of
+    <a href="https://www.we-con.com.cn/en/" target="_blank" rel="noopener">Wecon (China)</a>
+  </footer>
 </body>
 </html>
