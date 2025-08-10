@@ -1,0 +1,15 @@
+title: WECON USA
+url: https://dzuiko.github.io
+baseurl: /wecon-usa
+
+collections:
+  products:
+    output: true
+    permalink: /products/:slug/
+
+markdown: kramdown
+theme: null
+plugins: []
+
+exclude:
+  - README.md

@@ -1,0 +1,9 @@
+<article class="card">
+  <a href="{{ site.baseurl }}{{ product.url }}">
+    <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product.title }}" loading="lazy">
+    <h4>{{ product.title }}</h4>
+    <div class="muted">
+      ${{ product.price }}{% if product.stock %} · Stock: {{ product.stock }}{% endif %}
+    </div>
+  </a>
+</article>
