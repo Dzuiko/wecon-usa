@@ -15,8 +15,23 @@
 
     /* Layout */
     .container{max-width:1120px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#0b0f14 60%,rgba(11,15,20,0));border-bottom:1px solid var(--border)}
-    .nav{display:flex;align-items:center;gap:20px;justify-content:space-between}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(180deg,rgba(11,15,20,0.92) 60%,rgba(11,15,20,0.5)), url('img/bg-plc-hmi.jpg') center/cover no-repeat;
+  border-bottom: 1px solid var(--border);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+.container.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  min-height: 120px;
+}
     .brand img.logo{width:96px;height:auto;display:block}
     .navlinks{display:flex;gap:16px}
     .navlinks a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px}
@@ -67,8 +82,7 @@
     .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 
     body {
-      background: var(--bg) url('img/bg-plc-hmi.jpg') center/cover no-repeat fixed;
-      /* Можно добавить затемнение поверх картинки: */
+      background: var(--bg);
       position: relative;
     }
     body::before {
