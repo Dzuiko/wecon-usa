@@ -32,6 +32,17 @@ layout: null
       z-index: 1;
       pointer-events: none;
     }
+    .site-alert {
+      background: linear-gradient(135deg,#b91c1c,#dc2626);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 8px 0 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    }
+    .site-alert strong {font-weight:600}
   </style>
 </head>
 <body>
@@ -49,6 +60,9 @@ layout: null
 
   <main class="container">
     <section class="header-hero">
+      <div class="site-alert" role="status" aria-live="polite">
+        <strong>Notice:</strong> We’re migrating the site to new hosting. This preview isn’t final; content may change. Current pricing & stock: <a href="https://www.ebay.com/usr/wecon-usa" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">our eBay store</a>.
+      </div>
       <h1>PLC & HMI — In Stock in USA</h1>
       <p>Transparent prices. Ships from NYC in 1–2 business days. No import duty.</p>
       <div class="badges">
@@ -56,6 +70,17 @@ layout: null
         <span class="badge">Warehouse: Queens, NY</span>
         <span class="badge">Invoice via bank (ACH)</span>
       </div>
+    </section>
+
+    <!-- Overview / Links to partner site -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>We supply <strong>Wecon</strong> PLCs and HMIs. Full specifications, manuals and product families are available on the official Wecon website.</p>
+        <p>
+            <a class="btn" href="https://www.we-con.com.cn/en/" target="_blank" rel="noopener">Wecon official site</a>
+            <a class="btn" href="https://www.we-con.com.cn/en/download" target="_blank" rel="noopener">Software & manuals</a>
+        </p>
+        <div class="note">If you don’t find what you need here, browse the full Wecon catalog above and send me a request — I’ll quote and import on demand.</div>
     </section>
 
     <section id="featured">
