@@ -30,9 +30,17 @@
 
     {% if page.specs %}
     <h3>Specs</h3>
+    {% assign specs_list = page.specs %}
+    {% if specs_list contains ',' %}
+      {% assign specs_list = page.specs | split: ',' %}
+    {% endif %}
     <ul>
-      {% for s in page.specs %}<li>{{ s }}</li>{% endfor %}
+      {% for s in specs_list %}
+        <li>{{ s | strip }}</li>
+      {% endfor %}
     </ul>
+    {% else %}
+      <p><em>No specs available.</em></p>
     {% endif %}
 
     <p class="btn-row">
