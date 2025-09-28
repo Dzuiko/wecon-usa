@@ -95,11 +95,17 @@ layout: null
 
     <section id="products">
       <h2>All products</h2>
-      <div class="grid">
-        {% for product in site.products %}
-          {% include product-card.html product=product %}
-        {% endfor %}
-      </div>
+      {% assign categories = site.products | map: "category" | uniq %}
+      {% for category in categories %}
+        <h3>{{ category }}</h3>
+        <div class="grid">
+          {% for product in site.products %}
+            {% if product.category == category %}
+              {% include product-card.html product=product %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
     </section>
 
     <section id="shipping">
