@@ -2,6 +2,8 @@ title: WECON USA
 url: https://wecon-usa.com
 baseurl: ""
 
+google_analytics: "" # Set to your GA4 Measurement ID, e.g., G-XXXXXXXXXX
+
 collections:
   products:
     output: true
