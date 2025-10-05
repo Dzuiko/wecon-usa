@@ -3,7 +3,7 @@ layout: product
 title: "PLC LX3VP-3624MT-D"
 category: "PLC"
 sku: LX3VP-3624MT-D
-price: 191
+price: 248
 stock: 1
 image: /img/LX3VP-3624MT-D-1.jpg
 images:

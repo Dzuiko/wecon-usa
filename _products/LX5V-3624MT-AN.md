@@ -3,7 +3,7 @@ layout: product
 title: "PLC LX5V-3624MT-AN"
 category: "PLC"
 sku: LX5V-3624MT-AN
-price: 261
+price: 340
 stock: 1
 image: /img/LX5V-3624MT-AN-1.jpg
 images:

@@ -3,7 +3,7 @@ layout: product
 title: "PLC LX5S-3624MT4H-AN"
 category: "PLC"
 sku: LX5S-3624MT4H-AN
-price: 290
+price: 377
 stock: 1
 image: /img/LX5S-3624MT4H-AN-1.jpg
 images:

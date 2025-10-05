@@ -3,7 +3,7 @@ layout: product
 title: "PLC LX6C-0808MT-DD"
 category: "PLC"
 sku: LX6C-0808MT-DD
-price: 540
+price: 701
 stock: 1
 image: /img/LX6C-0808MT-DD-1.jpg
 images:
