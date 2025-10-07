@@ -11,7 +11,8 @@ collections:
 
 markdown: kramdown
 theme: null
-plugins: []
+plugins:
+  - jekyll-sitemap
 
 exclude:
   - README.md

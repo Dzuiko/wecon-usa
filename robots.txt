@@ -1,0 +1,6 @@
+# robots.txt for wecon-usa.com
+User-agent: *
+Allow: /
+
+# Point crawlers to the auto-generated sitemap
+Sitemap: https://wecon-usa.com/sitemap.xml
