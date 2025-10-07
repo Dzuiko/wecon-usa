@@ -2,7 +2,7 @@ title: WECON USA
 url: https://wecon-usa.com
 baseurl: ""
 
-google_analytics: "" # Optional: set to your GA4 Measurement ID (e.g., G-XXXXXXXXXX). If empty, fallback ID in analytics include will be used.
+google_analytics: "G-C22WW20TLP" # Optional: set to your GA4 Measurement ID (e.g., G-XXXXXXXXXX). If empty, fallback ID in analytics include will be used.
 
 collections:
   products:
